@@ -1,0 +1,21 @@
+[{
+    "id": 1,
+    "name": "Component",
+    "routerLink": ""
+}, {
+    "id": 2,
+    "name": "Services",
+    "routerLink": "services"
+}, {
+    "id": 3,
+    "name": "Directives",
+    "routerLink": "directives"
+}, {
+    "id": 4,
+    "name": "CSS",
+    "routerLink": "css"
+}, {
+    "id": 5,
+    "name": "jQuery",
+    "routerLink": "jquery"
+}]

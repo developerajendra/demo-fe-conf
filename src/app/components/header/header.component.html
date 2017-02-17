@@ -1,0 +1,7 @@
+<header class="container blue circleBehind">
+    <ul *ngIf="navigation">
+        <li *ngFor="let nav of navigation">
+            <a [routerLink]="[nav.routerLink]">{{nav.name}}</a>
+        </li>
+    </ul>
+</header>
