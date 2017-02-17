@@ -1,8 +1,23 @@
-<article>
-    <div class="card transition">
-        <h2 class="transition">Awesome Headline</h2>
-        <p>Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
-        <div class="cta-container transition"><a href="#" class="cta">Call to action</a></div>
-        <div class="card_circle transition"></div>
+<section class="events">
+    <h1>Events</h1>
+    <button (click)="show()">Show</button>
+    <button (click)="hide()">Hide</button>
+
+    <div class="row">
+        <section *ngIf="isClicked">
+            <img id="loading" src="http://www.vitorazevedo.net/external_files/loading_small.png">
+        </section>
     </div>
-</article>
+</section>
+
+<section class="data-binding">
+    <h1>Data Binding</h1>
+    {{dataBinding}}
+    <div class="row">
+        <input type="text" placeholder="firstName" [(ngModel)]="firstName"> firstName : {{firstName}}
+    </div>
+
+    <div class="row">
+        <input type="text" placeholder="lastname" #lastName value="hello">lastName : {{lastName.value}}
+    </div>
+</section>

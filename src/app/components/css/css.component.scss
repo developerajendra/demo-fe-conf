@@ -1,0 +1,13 @@
+/*
+:host{}
+:host /deep/ {}
+:host-context()
+*/
+
+:host {
+    padding: 30px;
+    float: left;
+    /deep/ app-home h2 {
+        color: red;
+    }
+}

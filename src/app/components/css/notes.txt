@@ -3,7 +3,18 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 @Component({
     selector: 'app-css',
     templateUrl: './css.component.html',
+    // template: `
+    // <style>
+    //   h1{
+    //     color:#ac4;
+    //     font-size:100px;
+    //   }
+    // </style>
+    // <h1>This is awesome</h1>
+    // `,
     styleUrls: ['./css.component.scss'],
+
+    // styles: ['h1{color:red;font-size:54px;}'],
     // encapsulation: ViewEncapsulation.Native,
     // encapsulation:ViewEncapsulation.Emulated
     // encapsulation: ViewEncapsulation.None

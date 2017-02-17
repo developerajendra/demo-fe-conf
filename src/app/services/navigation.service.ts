@@ -18,4 +18,21 @@ export class NavigationService {
     })
   }
 
+getData(){
+  return "hello world";
+}
+
+  getStaticData(): any {
+    return new Promise<any>((resolve) => {
+      let data = this.http.get("../../assets/data/staticData.json")
+        .map((data) => {
+          resolve(data.json());
+        }).subscribe((data) => {
+          resolve(data);
+        })
+    })
+  }
+
+
+
 }
